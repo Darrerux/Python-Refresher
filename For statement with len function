@@ -1,0 +1,14 @@
+#for in range() example
+words = ['Ball', 'Gold', 'Car', 'Machine', 'Eye Glasses']
+
+print("Before:", words)
+
+for w in words[:]:
+    print(f"\nChecking '{w}' - length is len{w}")
+    if len(w) > 6:
+        print(f"  -> '{w}' is longer than 6 inserting at front")
+        words.insert(0, w)
+    else:
+        print(f"  -> '{w} is 6 or fewer, skipping")
+
+print("f\nAfter:", words)
