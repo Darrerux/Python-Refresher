@@ -1,1 +1,1 @@
-For my python learning. Sort of diary for myself. I'm struggling 
+For my python learning. Sort of diary to myself. I'm struggling 
