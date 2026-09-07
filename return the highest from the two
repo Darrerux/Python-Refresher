@@ -1,0 +1,8 @@
+def max_of_two(x, n):
+    if x > n:
+        return(x)
+    else:
+        return(n)
+
+number = max_of_two(8, 1)
+print(number)
