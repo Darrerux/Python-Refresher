@@ -1,0 +1,16 @@
+
+def ask_input(prompt, retries = 4, reminder = "Try again!"):
+    while True:
+        reply = input(prompt)
+        if reply in ('y', 'ye', 'yes'):
+            return True
+        if reply in ('n', 'no', 'nah'):
+            return False
+        retries = retries - 1
+        if retries < 0:
+            raise ValueError('Invalid Userinput')
+        print(reminder)
+
+ask_input("are you okay?")
+ask_input("are you really okay?", 2)
+ask_input("Common are you okay?", 2, "are you sure?")
